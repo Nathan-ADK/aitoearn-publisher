@@ -1,0 +1,36 @@
+{
+  "name": "@nathan-adk/aitoearn-publisher",
+  "version": "0.1.0",
+  "description": "Standalone local CLI to publish npm packages and create GitHub Releases. No aitoearn.cn server API required.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "aitoearn-publisher": "src/cli.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./cli": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "bun test"
+  },
+  "keywords": [
+    "npm-publish",
+    "github-release",
+    "cli",
+    "conventional-changelog"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nathan-ADK/aitoearn-publisher.git"
+  },
+  "homepage": "https://github.com/Nathan-ADK/aitoearn-publisher"
+}
